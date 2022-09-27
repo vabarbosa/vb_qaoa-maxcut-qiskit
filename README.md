@@ -46,7 +46,7 @@ def cost_expected(graph, ket):
   h = np.array(cost_ham(graph))
   return np.conj(ket).dot(h.dot(ket)).real
 
-cost_expected(g, np.array(state))
+cost_expected(g, np.array(QAOA(g, [1,2,1.8,2.9])))
 ```
 Optimizer
 ```python
